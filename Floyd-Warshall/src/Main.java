@@ -3,7 +3,7 @@ import java.util.List;
 
 class Main
 {
-    // Função recursiva para imprimir o caminho de um determinado vértice `u` do vértice de origem `v`
+    // Função recursiva para imprimir o caminho de um determinado vértice `u` a partir do vértice de origem `v`
     private static void printPath(int[][] path, int v, int u, List<Integer> route)
     {
         if (path[v][u] == v) {
@@ -108,7 +108,7 @@ class Main
         // define o infinito
         int I = Integer.MAX_VALUE;
 
-        // dada representação de adjacência da matriz
+        // dada representação da matriz de adjacência
         int[][] adjMatrix = new int[][]
                 {
                         { 0, I, -2, I },
